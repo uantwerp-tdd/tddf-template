@@ -17,15 +17,17 @@
 
 ## 3. Model Files / API Details
 <!--
-Teachable Machine: paste the shareable link from "Export Model > Upload my
-model" — the same one that goes in your end-assessment report. Point
-MODEL_URL in script.js at it. You don't need to commit model.json/weights.bin.
+Teachable Machine: export via "Export Model > Download my model" (TensorFlow.js
+tab) and commit the three files (model.json, weights.bin, metadata.json) into
+a /model folder in this repo — see the worksheet for exact steps. Point
+MODEL_URL in script.js at "./model/". Keeping your own copy means your
+interface doesn't depend on Google's hosting staying up.
 Roboflow: do NOT commit your API key. Describe how the key is supplied
 (e.g. prompted client-side, or via config.js, which is gitignored) and link
 the Roboflow project/version used.
 -->
 
-- Teachable Machine shareable link (or Roboflow project link):
+- Model files location: `/model` (Teachable Machine) or API details (Roboflow):
 - API key handling (Roboflow only):
 
 ## 4. Known Limitations

@@ -6,12 +6,15 @@ const labelContainer = document.getElementById("label-container");
 const webcam = document.getElementById("webcam");
 
 // ---------- OPTION A: Teachable Machine ----------
-// Use the shareable link you already got from "Export Model > Upload my
-// model" in Teachable Machine (the same one you paste into your end-
-// assessment report). No need to download/commit model.json or weights.bin
-// — just point at your hosted TM link, e.g.:
+// Export via "Export Model > Download my model" (TensorFlow.js tab),
+// unzip, and commit model.json + weights.bin + metadata.json into a
+// /model folder in this repo (see the worksheet for exact steps).
+// Keeping your own copy means your interface doesn't depend on Google's
+// hosting staying up.
+const MODEL_URL = "./model/";
+// Alternative: point at your Teachable Machine hosted shareable link
+// instead of local files, e.g.:
 // const MODEL_URL = "https://teachablemachine.withgoogle.com/models/XXXXXXXXX/";
-const MODEL_URL = "https://teachablemachine.withgoogle.com/models/XXXXXXXXX/";
 
 async function initTeachableMachine() {
   const modelURL = MODEL_URL + "model.json";
