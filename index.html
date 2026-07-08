@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundamentals Pipeline</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Fundamentals Pipeline</h1>
+    <p>Replace this with a one-line description of your component/challenge.</p>
+  </header>
+
+  <main>
+    <!-- Camera / input feed -->
+    <section id="input-section">
+      <video id="webcam" autoplay playsinline></video>
+      <canvas id="output-canvas"></canvas>
+    </section>
+
+    <!-- Prediction / result display -->
+    <section id="result-section">
+      <div id="label-container"></div>
+    </section>
+
+    <button id="start-btn">Start</button>
+  </main>
+
+  <footer>
+    <p>Built for the Technology-Driven Design module, University of Antwerp.</p>
+  </footer>
+
+  <!-- Teachable Machine library (remove if using Roboflow) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
