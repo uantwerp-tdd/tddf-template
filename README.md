@@ -3,7 +3,6 @@
 > Fundamentals Pipeline assignment — Technology-Driven Design, University of Antwerp
 
 **Student name:**
-**Student ID:**
 **Erasmus student (yes/no):**
 
 ## 1. Component / Challenge Chosen
